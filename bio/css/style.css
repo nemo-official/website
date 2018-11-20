@@ -1,0 +1,48 @@
+@font-face { font-family: KG; src: url('../KG.ttf'); } 
+* {
+	font-family: "Quicksand";
+}
+h1 {
+	font-family: KG;
+	animation-name: colorChanger;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+h2 {
+	font-weight: 700;
+}
+@keyframes colorChanger {
+	0%   {color: #FF4242}
+	20%  {color: #FFBB33}
+	40%  {color: #99CC00}
+	60%  {color: #34B6E5}
+	80%  {color: #AA66CC}
+	100% {color: #FF4242}
+}
+#myCanvas{
+	position: absolute;
+  	top: 53%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+.textfield{
+	margin: 0 auto;
+	width: 400px;
+	position: absolute;
+	top: 80%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.textfield input {
+	font-family: "Quicksand";
+	font-size: 1.2rem;
+	padding: .8rem 1.5rem;
+}
+.textfield input:focus {
+	border-color: #5CB85C;
+}
+.textfield button {
+	font-family: "Quicksand";
+	font-size: 1.2rem;
+	cursor: pointer;
+}
